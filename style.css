@@ -1,0 +1,248 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: url("https://raw.githubusercontent.com/xyxb23/fcc-portfolio/master/dylan-luder-6TOSRmdCEp0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#navbar ul {
+  margin: 0;
+  margin-right: 20px;
+}
+
+#navbar ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+  font-weight: lighter;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    justify-content: center;
+  }
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+#welcome-section h1 {
+  font-size: 3em;
+  font-weight: normal;
+  color: black;
+  margin-bottom: 0;
+  padding: 10px;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+#welcome-section p {
+  font-size: 2em;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgb(180, 0, 0, 0.8);
+  border-radius: 10px;
+  color: white;
+}
+
+#projects header {
+  height: 100px;
+  padding: 20px 0;
+  font-family: Helvetica;
+  font-size: 2em;
+  color: white;
+}
+
+#projects {
+  background-color: rgb(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  #projects {
+    min-height: 100vh;
+  }
+}
+
+#frontend-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-items: center;
+  margin: 0 auto;;
+}
+
+#backend-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.4);
+  width: 50%;
+  margin: 0 auto;
+  color: whitesmoke;
+}
+
+#backend-wrapper ul {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+#backend-wrapper ul li {
+  margin-bottom: 10px;
+}
+
+#backend-wrapper ul a {
+  color: whitesmoke;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: auto 100%;
+  height: 300px;
+  width: 300px;
+}
+
+.project-tile a {
+  background: rgb(0, 0, 0, 0.4);
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+}
+
+.project-tile a:hover {
+  background: rgb(255, 255, 255, 0.5);
+  color: black;
+  text-decoration: underline;
+}
+
+#tribute-page-tile {
+  background-image: url("https://github.com/xerofux/fcc-portfolio/blob/master/tribute-page.JPG?raw=true");
+}
+
+#survey-form-tile {
+  background-image: url("https://github.com/xerofux/fcc-portfolio/blob/master/survey-form.JPG?raw=true");
+}
+
+#landing-page-tile {
+  background-image: url("https://github.com/xerofux/fcc-portfolio/blob/master/landing-page.JPG?raw=true");
+}
+
+#technical-document-tile {
+  background-image: url("https://github.com/xerofux/fcc-portfolio/blob/master/technical-document.JPG?raw=true");
+}
+
+#quote-machine-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/quote-machine.JPG?raw=true");
+}
+
+#markdown-previewer-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/markdown-previewer.JPG?raw=true");
+}
+
+#drum-machine-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/drum-machine.JPG?raw=true");
+}
+
+#pomodoro-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/pomodoro-clock.JPG?raw=true");
+}
+
+#barchart-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/bar-chart.png?raw=true");
+}
+
+#scatterplot-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/scatter-plot.png?raw=true");
+}
+
+#heatmap-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/heat-map.png?raw=true");
+}
+
+#choropleth-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/choropleth-map.png?raw=true");
+}
+
+#treemap-tile {
+  background-image: url("https://github.com/xyxb23/fcc-portfolio/blob/master/tree-map.png?raw=true");
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.65), rgb(0, 0, 0, 0));
+  width: 50%;
+  margin: 0 auto;
+}
+
+.profile-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  background: rgb(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+  margin-bottom: 5px;
+}
+
+.profile-link img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.profile-link:hover {
+  border-bottom: 1px solid white;
+}
+
+#contacts span {
+  color: white;
+}
+
+#contacts span a {
+  color: white;
+}
